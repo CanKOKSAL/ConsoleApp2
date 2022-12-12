@@ -1,7 +1,8 @@
 int Mermi = 30;
 int Görev;
 
-do {
+do
+{
     Menu();
     Görev = Int32.Parse(Console.ReadLine());
     if (Görev > 5)
@@ -19,7 +20,7 @@ do {
     }
     if (Görev == 2)
     {
-        Console.WriteLine(Mermi=0);
+        Console.WriteLine(Mermi = 0);
     }
     if (Mermi == 0)
     {
@@ -33,11 +34,11 @@ do {
     {
         Console.WriteLine(Mermi);
     }
-    if (Mermi < 0)
+    if (0 > Mermi)
     {
         Console.WriteLine("Oyunu kaybettin");
     }
-     switch (Görev)
+    switch (Görev)
     {
         case 1:
             Console.WriteLine("Mermin bir azaldı");
@@ -55,8 +56,8 @@ do {
             Console.WriteLine("Oyundan çıktın");
             break;
     }
-} while (Görev !=5);
-
+} while (Görev != 5 && Mermi>=0);   
+ 
 static void Menu()
 {
     Console.WriteLine("Ateş etmek için 1'e tıklayın");
