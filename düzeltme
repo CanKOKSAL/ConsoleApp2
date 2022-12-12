@@ -36,13 +36,13 @@ do
     }
     if (0 > Mermi)
     {
-        Console.WriteLine("Oyunu kaybettin");
+        Console.WriteLine("Mermin bitti oyunu kaybettin");
     }
     switch (Görev)
     {
         case 1:
-            Console.WriteLine("Mermin bir azaldı");
-            break;
+            Console.WriteLine("Mermin azaldı");
+           break;
         case 2:
             Console.WriteLine("Mermini harcadın");
             break;
