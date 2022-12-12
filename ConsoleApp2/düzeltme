@@ -6,7 +6,7 @@ do {
     Görev = Int32.Parse(Console.ReadLine());
     if (Görev > 5)
     {
-        Console.WriteLine("Oyuna devam edebilmek için 0-5 arası bir rakam giriniz");
+        Console.WriteLine("Oyuna devam edebilmek için 0-4 arasi bir rakam giriniz");
     }
     if (Görev == 1)
     {
@@ -14,7 +14,6 @@ do {
         {
             Mermi--;
             Console.WriteLine(Mermi);
-
         }
         while (Mermi == 0);
     }
@@ -34,7 +33,11 @@ do {
     {
         Console.WriteLine(Mermi);
     }
-    switch (Görev)
+    if (Mermi < 0)
+    {
+        Console.WriteLine("Oyunu kaybettin");
+    }
+     switch (Görev)
     {
         case 1:
             Console.WriteLine("Mermin bir azaldı");
@@ -52,7 +55,8 @@ do {
             Console.WriteLine("Oyundan çıktın");
             break;
     }
-} while (Görev != 5);
+} while (Görev !=5);
+
 static void Menu()
 {
     Console.WriteLine("Ateş etmek için 1'e tıklayın");
